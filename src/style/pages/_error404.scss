@@ -1,0 +1,52 @@
+// Import des fichiers
+@import "../utils/variable";
+@import "../utils/mixins";
+
+/******************** PAGES 404 *********************/
+
+.kasa_error {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: $primary-color;
+  margin: 100px auto 0;
+
+  &_block {
+    animation: SHOW-BOX 2s ease;
+    margin-bottom: 150px;
+  }
+
+  &_number {
+    font-size: 14rem;
+    font-weight: bold;
+    @include flexCenter;
+  }
+
+  &_message {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &_link {
+    font-size: 1.2rem;
+    color: $primary-color;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+/******************** RESPONSIVE PAGES 404 *********************/
+
+@media screen and (max-width: 767px) {
+  .kasa_error {
+    // width: 90%;
+    &_number {
+      font-size: 8rem;
+    }
+    &_message {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+}

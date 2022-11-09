@@ -7,9 +7,7 @@
 $font-1: "Montserrat", sans-serif;
 
 // Colors variable
-
-$color-1: #ff6060;
-
+@import "./utils//variable";
 /************ GÉNERAL ***********/
 * {
   box-sizing: border-box;
@@ -20,5 +18,12 @@ $color-1: #ff6060;
 
 body {
   font-family: $font-1;
-  width: 100%;
+}
+.main_content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main_header {
+  max-width: 1440px;
+  margin: 0 auto;
 }

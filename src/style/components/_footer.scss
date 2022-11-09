@@ -1,0 +1,34 @@
+// Import des fichiers
+@import "../utils/variable";
+@import "../utils/mixins";
+
+/******************** FOOTER *********************/
+
+footer {
+  @include flexCenter;
+  background-color: $footer;
+}
+.kasa_footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 180px;
+  width: 100%;
+  margin-top: 30px;
+  color: $tertiary-color;
+
+  &_reserved {
+    font-size: 1.2rem;
+    margin: 40px 0;
+  }
+}
+
+/******************** RESPONSIVE FOOTER *********************/
+@media screen and (max-width: 992px) {
+  .kasa_footer {
+    &_reserved {
+      font-size: 15px;
+    }
+  }
+}

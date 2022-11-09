@@ -1,2 +1,10 @@
-@import "./header";
+/*********** MAIN *************/
+
 @import "./settings";
+@import "./utils/variable";
+@import "./utils/mixins";
+@import "./components/header";
+@import "./components/banner";
+@import "./pages/error404";
+@import "./components/card";
+@import "./utils/loader";

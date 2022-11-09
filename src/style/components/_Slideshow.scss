@@ -1,0 +1,20 @@
+// Import des fichiers
+@import "../utils/variable";
+@import "../utils/mixins";
+
+/******************** CAROUSEL *********************/
+
+.slideshow_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 60px;
+  background: #333;
+  position: relative;
+
+  &_arrow {
+    color: $tertiary-color;
+    cursor: pointer;
+  }
+}
+/******************** RESPONSIVE SLIDER *********************/

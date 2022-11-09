@@ -1,12 +1,34 @@
-// Import
+// Import des module React
 import React from "react";
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+// Import des fichiers
+import dataJson from "./logements.json";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import NotFound from "./pages/NotFound/PageNotFound";
+import FicheLogements from "./pages/Logements/FicheLogements";
 
 function App() {
+  const [data, setData] = useState([]);
+
+  // Get and Stocker les données
+  useEffect(() => {
+    const fetchData = async () => {
+      setData(dataJson);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/FicheLogement/:id" element={<FicheLogements />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

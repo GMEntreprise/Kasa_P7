@@ -1,0 +1,55 @@
+/*************** Import ****************/
+@import "../utils/variable";
+@import "../utils/mixins";
+/********** Desktop ************/
+.kasa_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 60px;
+
+  &_items a {
+    position: relative;
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 0 20px;
+  }
+}
+
+/********** Responsive **********/
+
+@media screen and (max-width: 992px) {
+  .kasa_container {
+    margin: 20px;
+    &_items a {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+    &_logo {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .kasa_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 10px;
+    &_logo {
+      width: 150px;
+    }
+
+    &_items a {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $primary-color;
+      padding: 0 12px;
+    }
+  }
+  /*************** BANNER *************/
+}
