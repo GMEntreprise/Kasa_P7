@@ -13,8 +13,61 @@
   position: relative;
 
   &_arrow {
+    position: absolute;
+    bottom: 40%;
     color: $tertiary-color;
     cursor: pointer;
   }
+
+  &_pictures {
+    height: 420px;
+    width: 100%;
+  }
+  &_pictures img {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &_numbers {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+.arrowRight {
+  right: 20px;
+}
+.arrowLeft {
+  left: 20px;
 }
 /******************** RESPONSIVE SLIDER *********************/
+
+@media screen and (max-width: 992px) {
+  .slideshow_container {
+    &_pictures img {
+      border-radius: 10px;
+    }
+  }
+  .slideshow_container > img {
+    height: 40px;
+    width: 40px;
+  }
+}
+/******************** RESPONSIVE  *********************/
+@media screen and (max-width: 576px) {
+  .slideshow_container {
+    margin: 0 15px;
+
+    &_pictures {
+      height: 280px;
+    }
+
+    &_pictures img {
+      height: 280px;
+    }
+  }
+}

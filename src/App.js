@@ -1,25 +1,15 @@
 // Import des module React
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 // Import des fichiers
-import dataJson from "./logements.json";
+// import dataJson from "./logements.json";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/PageNotFound";
 import FicheLogements from "./pages/Logements/FicheLogements";
 
 function App() {
-  const [data, setData] = useState([]);
-
-  // Get and Stocker les données
-  useEffect(() => {
-    const fetchData = async () => {
-      setData(dataJson);
-    };
-    fetchData();
-  }, []);
-
   return (
     <BrowserRouter>
       <Routes>
