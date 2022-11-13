@@ -23,6 +23,11 @@
 @media screen and (max-width: 992px) {
   .kasa_container {
     margin: 20px;
+
+    &_items {
+      display: flex;
+      align-items: center;
+    }
     &_items a {
       font-size: 1rem;
       padding: 0 10px;

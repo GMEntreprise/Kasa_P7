@@ -11,16 +11,16 @@
   margin: 0 60px;
   background: #333;
   position: relative;
-
+  border-radius: 25px;
   &_arrow {
     position: absolute;
-    bottom: 40%;
+    bottom: 33%;
     color: $tertiary-color;
     cursor: pointer;
   }
 
   &_pictures {
-    height: 420px;
+    height: 415px;
     width: 100%;
   }
   &_pictures img {
@@ -48,6 +48,8 @@
 
 @media screen and (max-width: 992px) {
   .slideshow_container {
+    margin: 0 20px;
+    border-radius: 10px;
     &_pictures img {
       border-radius: 10px;
     }
@@ -60,6 +62,7 @@
 /******************** RESPONSIVE  *********************/
 @media screen and (max-width: 576px) {
   .slideshow_container {
+    border-radius: 10px;
     margin: 0 15px;
 
     &_pictures {

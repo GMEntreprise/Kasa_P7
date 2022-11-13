@@ -1,0 +1,49 @@
+// Import des fichiers
+@import "../utils/variable";
+@import "../utils/mixins";
+
+/*************** TAGNAME  *************/
+.kasa_fiche_tag-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-left: -13px;
+
+  .tag-items {
+    background-color: $primary-color;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .tag-items p {
+    color: $tertiary-color;
+  }
+}
+/*************** RESPONSIVE TAGNAME  *************/
+
+@media screen and (max-width: 992px) {
+  .kasa_fiche_tag-items {
+    margin-top: 15px;
+    margin-left: 5px;
+
+    .tag-items {
+      font-size: 15px;
+      margin: 5px 3px;
+      padding: 3px 10px;
+      border-radius: 5px;
+    }
+  }
+}
+/*************** RESPONSIVE PHONE  *************/
+
+@media screen and (max-width: 576px) {
+  .kasa_fiche_tag-items {
+    .tag-items {
+      font-size: 11px;
+      margin: 5px 3px;
+      padding: 3px 10px;
+      border-radius: 5px;
+    }
+  }
+}

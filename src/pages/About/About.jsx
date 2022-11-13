@@ -47,13 +47,17 @@ function About() {
                 <Collaspe
                   id={content.id}
                   label={content.label}
-                  text={content.text}
+                  content={content.text}
                 />
               </ul>
             );
           })}
         </section>
       </main>
+
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   );
 }

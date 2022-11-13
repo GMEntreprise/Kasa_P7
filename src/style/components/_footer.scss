@@ -7,6 +7,10 @@
 footer {
   @include flexCenter;
   background-color: $footer;
+  // position: fixed;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
 }
 .kasa_footer {
   display: flex;
@@ -23,6 +27,18 @@ footer {
     margin: 40px 0;
   }
 }
+/******************** FOOTER ABOUT *********************/
+.footer {
+  @include flexCenter;
+  background-color: $footer;
+  @include position;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    position: inherit;
+  }
+}
 
 /******************** RESPONSIVE FOOTER *********************/
 @media screen and (max-width: 992px) {
@@ -30,5 +46,20 @@ footer {
     &_reserved {
       font-size: 15px;
     }
+  }
+}
+/******************** FOOTER RESPONSIVE Logement *********************/
+.footer_logement {
+  background-color: $footer;
+}
+
+// @media screen and (max-width: 1100px) {
+//   .footer_logement {
+//     @include position;
+//   }
+// }
+@media screen and (max-width: 576px) {
+  .footer_logement {
+    position: unset;
   }
 }

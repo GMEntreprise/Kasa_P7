@@ -1,4 +1,5 @@
 // Import module
+
 import React from "react";
 import { useState } from "react";
 
@@ -12,6 +13,7 @@ import "../../style/components/_Slideshow.scss";
 const Slideshow = ({ data }) => {
   // Définition de l'état initial de l'index du diaporama
   const [currentIndex, setCurrentIndex] = useState(0);
+  // const appartPictures =
 
   // Setting previous picture change
   const goToPrevious = () => {
@@ -48,16 +50,11 @@ const Slideshow = ({ data }) => {
           />
         </>
       )}
-
       {/* Afficher l'index de l'image dans le diaporama*/}
+      <div className="slideshow_container_pictures">
+        <img src={data[currentIndex]} alt="Photos du logement" />
+      </div>
 
-      {data.map((imageSlider) => {
-        return (
-          <div className="slideshow_container_pictures" key={imageSlider.id}>
-            <img src={imageSlider} alt="" />
-          </div>
-        );
-      })}
       <div className="slideshow_container_numbers">
         {/* data.length nous renvoie la valeur de l'objet tableau CurrentIndex vaut 0 */}
         <p>{currentIndex + 1 + "/" + data.length}</p>

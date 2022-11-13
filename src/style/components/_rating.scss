@@ -1,0 +1,22 @@
+// Import des fichiers
+@import "../utils/variable";
+@import "../utils/mixins";
+
+/*************** RATING*************/
+
+.kasa_fiche {
+  &_star {
+    margin-top: 25px;
+  }
+}
+/*************** RATING RESPONSIVE *************/
+
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 576px) {
+  .kasa_fiche {
+    &_star {
+      margin-top: 0;
+    }
+  }
+}

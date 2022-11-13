@@ -6,7 +6,7 @@ import PropType from "prop-types";
 // Import des styles
 import "../../style/components/_collaspe.scss";
 
-const Collaspe = ({ label, text }) => {
+const Collaspe = ({ label, content }) => {
   // Reglement de Dropdown
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,7 +30,7 @@ const Collaspe = ({ label, text }) => {
           )}
         </div>
       </div>
-      {isOpen && <div className="kasa_collaspe_content"> {text} </div>}
+      {isOpen && <div className="kasa_collaspe_content"> {content} </div>}
     </li>
   );
 };
