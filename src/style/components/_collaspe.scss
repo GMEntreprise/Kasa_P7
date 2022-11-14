@@ -47,6 +47,22 @@
       width: 100%;
     }
     &_title {
+      font-size: 1.2rem;
+    }
+    &_content {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 10px;
+      line-height: 28px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .kasa_collaspe {
+    &_button {
+      width: 100%;
+    }
+    &_title {
       font-size: 13px;
     }
     &_content {
@@ -57,5 +73,49 @@
     }
   }
 }
+/******************** APART COLLASPE *********************/
+.kasa_fiche_collaspe {
+  display: flex;
+  justify-content: space-between;
 
-/******************** FOOTER COLLASPE *********************/
+  .kasa_collaspe {
+    margin-bottom: 25px;
+    width: 50%;
+    margin: 25px 0;
+
+    &_button {
+      width: 85%;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .kasa_fiche_collaspe {
+    display: flex;
+    flex-direction: column;
+
+    .kasa_collaspe {
+      width: 95%;
+      margin: 15px 10px;
+
+      &_button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .kasa_fiche_collaspe {
+    display: flex;
+    flex-direction: column;
+
+    .kasa_collaspe {
+      width: 95%;
+      margin: 15px 10px;
+
+      &_button {
+        width: 100%;
+      }
+    }
+  }
+}

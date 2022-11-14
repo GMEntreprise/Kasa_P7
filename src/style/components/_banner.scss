@@ -94,9 +94,6 @@
     height: 223px;
     margin: 15px;
   }
-  .banner_about::before {
-    background-position: 50%;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -106,6 +103,7 @@
   }
 
   .banner_about::before {
+    background-image: url(../../assets/images/background_mobile.png);
     border-radius: 10px;
     background-position: 50%;
   }
