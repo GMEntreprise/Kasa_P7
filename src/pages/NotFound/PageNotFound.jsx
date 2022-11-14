@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 // Import des fichiers
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+
 const PageNotFound = () => {
   return (
     <div>
@@ -22,6 +23,10 @@ const PageNotFound = () => {
           <p>Retournez sur la page d'acceuil</p>
         </NavLink>
       </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

@@ -27,39 +27,11 @@ footer {
     margin: 40px 0;
   }
 }
-/******************** FOOTER ABOUT *********************/
-.footer {
-  @include flexCenter;
-  background-color: $footer;
-  @include position;
-}
-
-@media screen and (max-width: 576px) {
-  .footer {
-    position: inherit;
-  }
-}
-
 /******************** RESPONSIVE FOOTER *********************/
 @media screen and (max-width: 992px) {
   .kasa_footer {
     &_reserved {
       font-size: 15px;
     }
-  }
-}
-/******************** FOOTER RESPONSIVE Logement *********************/
-.footer_logement {
-  background-color: $footer;
-}
-
-// @media screen and (max-width: 1100px) {
-//   .footer_logement {
-//     @include position;
-//   }
-// }
-@media screen and (max-width: 576px) {
-  .footer_logement {
-    position: unset;
   }
 }

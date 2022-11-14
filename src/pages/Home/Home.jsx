@@ -15,7 +15,7 @@ import Footer from "../../components/Footer/Footer";
 function Home() {
   return (
     <>
-      <div className="main_header">
+      <div className="main_head">
         <Header />
       </div>
       <main className="main_content">

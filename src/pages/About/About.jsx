@@ -37,9 +37,6 @@ function About() {
       <div className="main_header">
         <Header />
         <div className="banner_about"></div>
-      </div>
-
-      <main className="main_header">
         <section>
           {items.map((content) => {
             return (
@@ -53,11 +50,11 @@ function About() {
             );
           })}
         </section>
-      </main>
-
-      <div className="footer">
-        <Footer />
       </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

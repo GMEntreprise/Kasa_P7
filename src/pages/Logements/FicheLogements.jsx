@@ -90,9 +90,9 @@ const FicheLogements = () => {
         </section>
       </div>
 
-      <div className="footer_logement">
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </>
   );
 };

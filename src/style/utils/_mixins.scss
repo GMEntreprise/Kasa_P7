@@ -12,3 +12,10 @@
   left: 0;
   right: 0;
 }
+
+@mixin positionAbsolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
