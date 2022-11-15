@@ -11,7 +11,6 @@ import PageNotFound from "../NotFound/PageNotFound";
 import TagName from "../../components/TagName/TagName";
 import Rating from "../../components/Rating/Rating";
 import Collaspe from "../../components/Collaspe/Collaspe";
-import Loader from "../../components/Loader/Loader";
 
 // Import Style
 import "../../style/pages/_ficheLogement.scss";
