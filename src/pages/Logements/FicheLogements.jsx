@@ -1,5 +1,5 @@
 // Import des modules react
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 
 // Import des fichiers
