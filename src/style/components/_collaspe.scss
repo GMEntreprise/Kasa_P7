@@ -77,7 +77,9 @@
 .kasa_fiche_collaspe {
   display: flex;
   justify-content: space-between;
-
+  .kasa_collaspe_content {
+    width: 85%;
+  }
   .kasa_collaspe {
     margin-bottom: 25px;
     width: 50%;
@@ -108,6 +110,9 @@
   .kasa_fiche_collaspe {
     display: flex;
     flex-direction: column;
+    .kasa_collaspe_content {
+      width: 100%;
+    }
 
     .kasa_collaspe {
       width: 95%;

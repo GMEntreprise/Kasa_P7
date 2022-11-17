@@ -1,6 +1,5 @@
 // Import des module
 import { React, useState } from "react";
-import PropType from "prop-types";
 
 // Import des fichiers
 // Import des styles
@@ -34,9 +33,5 @@ const Collaspe = ({ label, content }) => {
     </li>
   );
 };
-// Sécure variable
-Collaspe.propTypes = {
-  label: PropType.string,
-  text: PropType.string,
-};
+
 export default Collaspe;
