@@ -5,6 +5,7 @@ import { React, useState } from "react";
 // Import des styles
 import "../../style/components/_collaspe.scss";
 
+// Destructuration
 const Collaspe = ({ label, content }) => {
   // Reglement de Dropdown
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Collaspe = ({ label, content }) => {
           {isOpen ? (
             <i className="fa-solid fa-chevron-up"></i>
           ) : (
-            // Sinon, Affiche moi this
+            // Sinon, Affiche moi isOpen false
             <i className="fa-solid fa-chevron-down"></i>
           )}
         </div>

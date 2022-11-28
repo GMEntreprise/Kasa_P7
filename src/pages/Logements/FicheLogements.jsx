@@ -1,5 +1,5 @@
 // Import des modules react
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Import des fichiers
@@ -16,6 +16,13 @@ import Collaspe from "../../components/Collaspe/Collaspe";
 import "../../style/pages/_ficheLogement.scss";
 
 const FicheLogements = () => {
+  // fetch("logements.json", {
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //     Accept: "application/json",
+  //   },
+  // });
+
   // Récupération de L'ID du logement dans l'url
   const params = useParams();
   const id = params.id;
